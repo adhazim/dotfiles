@@ -40,8 +40,7 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
 
-echo '[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc' >> ~/.zshrc
+# echo '[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc' >> ~/.zshrc
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc

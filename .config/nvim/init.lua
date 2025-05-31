@@ -20,6 +20,9 @@ require("lazy").setup(require("plugins"))
 require("lsp")
 require("cmp-config")
 require("dap-config")
+require("options")
+require("telescope-config")
+
 -- require("null-ls-config")
 require("ui")
 require("keymaps")
@@ -31,7 +34,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     vim.highlight.on_yank({ timeout = 200 })
   end,
 })
-
-vim.opt.clipboard = "unnamedplus"
-
 

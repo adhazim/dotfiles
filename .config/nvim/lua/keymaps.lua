@@ -14,6 +14,13 @@ local mappings = {
   { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "List Buffers" },
   { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help Tags" },
 
+  -- Buffer Management
+  { "<leader>bd", ":bd<CR>", desc = "Delete Current Buffer" },
+  { "<leader>bo", ":%bd|e#<CR>", desc = "Close Other Buffers" },
+  { "<leader>bn", ":bnext<CR>", desc = "Next Buffer" },
+  { "<leader>bp", ":bprevious<CR>", desc = "Previous Buffer" },
+  { "<leader>bl", ":ls<CR>:b<Space>", desc = "List and Switch Buffers" },
+
   -- Diagnostic
   { "<leader>vd", vim.diagnostic.open_float, desc = "View Diagnostics" },
   { "<leader>q", vim.diagnostic.setloclist, desc = "Quickfix Diagnostics List" },
@@ -42,5 +49,6 @@ wk.add({
   { "<leader>g", group = "git" },
   { "<leader>p", group = "project" },
   { "<leader>t", group = "trouble" },
+  { "<leader>b", group = "buffer" },
 })
 
