@@ -36,6 +36,10 @@ local mappings = {
 
   -- Clear search highlight on double Esc
   { "<Esc><Esc>", ":nohlsearch<CR>", desc = "Clear search highlight" },
+
+  -- Toggle
+  { "<leader>uw", ":set nowrap!<CR>", desc = "Toggle wrap" },
+  { "<leader>uc", ":set ic!<CR>", desc = "Toggle Ignore Case" },
 }
 
 -- Register mappings
@@ -50,5 +54,6 @@ wk.add({
   { "<leader>p", group = "project" },
   { "<leader>t", group = "trouble" },
   { "<leader>b", group = "buffer" },
+  { "<leader>u", group = "toggle" },
 })
 

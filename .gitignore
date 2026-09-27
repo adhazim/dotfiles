@@ -1,0 +1,42 @@
+.dotfiles
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.secret
+credentials/
+secrets/
+
+# SSH private keys
+.ssh/id_rsa
+.ssh/id_ed25519
+.ssh/id_ecdsa
+
+# Caches
+.cache/
+.npm/
+.yarn/
+.pnpm-store/
+
+# Development dependencies
+node_modules/
+vendor/
+__pycache__/
+*.pyc
+
+# Laravel
+storage/logs/
+storage/framework/
+bootstrap/cache/
+
+# IDE
+.idea/
+
+# Temporary files
+*.tmp
+*.log
+
+# Application data
+.config/cef_user_data/
+.config/MongoDB Compass/

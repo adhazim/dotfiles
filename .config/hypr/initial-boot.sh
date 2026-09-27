@@ -58,9 +58,12 @@ if [ ! -f "$HOME/.config/hypr/.initial_startup_done" ]; then
     #   	"$scriptsDir/Refresh.sh" > /dev/null 2>&1 & 
 	#fi
 
+	# "$scriptsDir/battery-notify.sh" > /dev/null 2>&1 &
+
 
     # Create a marker file to indicate that the script has been executed.
     touch "$HOME/.config/hypr/.initial_startup_done"
 
     exit
 fi
+

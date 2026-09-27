@@ -12,6 +12,10 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+custom=(
+	aliases
+)
+
 source $ZSH/oh-my-zsh.sh
 
 # Check archlinux plugin commands here
@@ -26,11 +30,11 @@ source $ZSH/oh-my-zsh.sh
 fastfetch -c $HOME/.config/fastfetch/config-compact.jsonc
 
 # Set-up icons for files/directories in terminal using lsd
-alias ls='lsd'
-alias l='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree'
+# alias ls='lsd'
+# alias l='ls -l'
+# alias la='ls -a'
+# alias lla='ls -la'
+# alias lt='ls --tree'
 
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
@@ -44,3 +48,8 @@ setopt appendhistory
 [[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
